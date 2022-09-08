@@ -1,0 +1,14 @@
+.parent1 h1{
+    color:blue;
+
+}
+.parent2 .p2-child1{
+    color:darkgreen;
+
+}
+.parent .parent1 .p1-child1 .child1-head{
+    color:black;
+}
+.parent .parent1 .p1-child1 h1{
+    color:brown;
+}

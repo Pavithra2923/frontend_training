@@ -1,0 +1,14 @@
+div{
+    width: 500px;
+    height: 500px;
+    padding-bottom:10px ;
+    border: 2px solid blue ;
+    border-width: 20px;
+}
+
+h3{
+    
+    margin-top: 50px;
+    border: 2px solid green;
+
+}

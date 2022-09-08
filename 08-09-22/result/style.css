@@ -1,0 +1,26 @@
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    color:red;
+}
+ul{
+    color:yellow;
+    border: 5px solid brown ;
+    
+
+}
+.classname{
+    color: olive;
+    border:2px solid violet;
+    text-align: center;
+}
+.headingtag{
+    color:goldenrod;
+    
+    border-style: ridge;
+    border:5px black;
+    border-style:double;
+}    
