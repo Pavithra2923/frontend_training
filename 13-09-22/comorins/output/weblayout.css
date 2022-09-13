@@ -1,0 +1,38 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    border:1px solid #000;
+    background-color: #000;
+    color:#fff;
+    padding:50px;
+    text-align: center;
+    font-size:40px ;
+}
+nav{
+    border:3px solid #fff;
+    background-color:  #808080;
+    color:#fff;
+    padding:30px;
+    text-align: center;
+    font-size:40px ;
+}
+section{
+    border:3px solid;
+    background-color:powderblue;
+    color:#fff;
+    padding-top: 75px;
+    padding-bottom: 200px;
+    text-align: center;
+    font-size:40px ;
+}
+footer{
+    border:3px solid #fff;
+    background-color:  #808080;
+    color:#fff;
+    padding:30px;
+    text-align: center;
+    font-size:40px ;
+}
