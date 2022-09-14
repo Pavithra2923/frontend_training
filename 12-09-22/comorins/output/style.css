@@ -1,0 +1,92 @@
+*{
+    margin:0;
+}
+/*css for index page*/
+.main{
+    width:100%;
+    border:1px solid #000;
+    background-color: #333;
+}
+.main .parent{
+    width:100%;
+    background-color: #333;
+    text-align:center;
+}
+.parent li{
+    display:inline-block;
+    background-color: #333;
+    padding:10px;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+/*css for display page*/
+.unorder{
+    width:45%;
+    border:1px solid ;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #fff000;
+    display:inline-block;
+}
+.list{
+    width:50%;
+    border:1px solid #fff000;
+    background-color: #fff000;
+}
+.list h2{
+    color:#ff0000;
+}
+/*css for iframe*/
+img{
+    margin:20px;
+}
+/*css for form*/
+form{
+    width:50%;
+    margin:0 500px;
+    
+}
+input[type=text] {
+    width:50%;
+    float:right;
+    margin-top: 10px;
+    margin-right: 230px;
+    border: 3px solid #ccc;
+    border-bottom-color: #faaf1a;
+    
+}
+input[type=color]{
+    width:50%;
+    float:right;
+    margin-right: 230px;
+    border: 3px solid #ccc;
+    border-bottom-color: #faaf1a;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+textarea {
+    width: 50%;
+    padding: 12px 20px;
+    float:right;
+    margin-right: 230px;
+    border: 3px solid #ccc;
+    border-bottom-color: #faaf1a;
+    
+}
+button{
+    float: right;
+    margin-right: 230px;
+    border-color: #faaf1a;
+    background-color: #faaf1a;
+}
+input[type=checkbutton]{
+    margin-right: 230px;
+
+}
