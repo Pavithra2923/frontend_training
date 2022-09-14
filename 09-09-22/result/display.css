@@ -1,15 +1,8 @@
-h1{
-    border: 20px solid #ff0000;
-    display: block;
+.main{
+    border:1px solid #000;
+    background-color: #333;
+    width: 100%;
 }
-h2{
-    border: 20px solid green;
+.main .ul{
     display: inline;
 }
-li{
-    display:inline-block;
-    border: 1px solid red;
-    margin: 50px;
-    padding: 20px;
-}
-

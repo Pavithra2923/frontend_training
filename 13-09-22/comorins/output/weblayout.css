@@ -1,7 +1,7 @@
 
 *{
     margin:0;
-    padding:0;
+    
 }
 header{
     border:1px solid #000;
@@ -20,13 +20,30 @@ nav{
     font-size:40px ;
 }
 section{
-    border:3px solid;
-    background-color:powderblue;
-    color:#fff;
-    padding-top: 75px;
-    padding-bottom: 200px;
+    background-color:gray;
+    overflow:hidden;
+}
+section h3{
+    width:100%;
+    border:1px  solid #808080;
+    background-color: #808080;
     text-align: center;
-    font-size:40px ;
+    
+}
+.grid{
+    padding:10px;
+    margin-left:5px;
+}
+.grid .column{
+    width: 32%;
+    display:inline-block;
+    
+    border: 1px solid white;
+    background-color:white;
+    padding-bottom:50px;
+    margin-left:5px;
+    height:170px;
+    
 }
 footer{
     border:3px solid #fff;

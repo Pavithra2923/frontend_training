@@ -1,0 +1,39 @@
+body{
+    background-color: #333;
+}
+h1{
+    text-align: center;
+    color:#ffff ;
+}
+.parent{
+    margin:0 auto;
+    width:70%;
+    
+}
+.nav{
+    width: 80%;
+    background-color: palevioletred;
+    
+}
+
+.nav ul{
+    width:60%;
+    
+}
+.nav li{
+    padding:10px;
+    display: inline-block;
+    
+}
+
+
+
+    
+
+section{
+    width:75%;
+    margin-top: 20px;
+    border:1px solid #ffff;
+    background-color: blanchedalmond;
+}
+
