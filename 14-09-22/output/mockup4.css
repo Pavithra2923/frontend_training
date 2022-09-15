@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    
+    border:1px solid ;
+    background-color: #333;
+}
+/* css for header */
+header{
+    width:100%;
+    border:1px solid;
+    background-color: darkgrey;
+
+    
+}
+header h1{
+    text-align: center;
+    padding:30px;
+}
+header p{
+    text-align: center;
+   
+}
+/* css for navgation bar */
+nav{
+    width:100%;
+    border:1px solid;
+    background-color: #000;
+}
+ul li{
+    color:#fff;
+    display: inline-block;
+    padding: 10px;
+}
+ul li .right{
+    float:right;
+}
+/* css for section left side */
+section{
+    width:100%;
+    margin-top: 10px;
+}
+section .left{
+    width:70%;
+    display: inline-block;
+}
+section .left .parent-1{
+    
+    background-color: azure;
+    
+    padding:5px;
+}
+.left .parent-1 .image{
+    width:70%;
+    
+    background-color: lightslategray;
+    padding-bottom: 150px;
+    padding-right: 200px;
+}
+.left .parent-2{
+    
+    background-color: azure;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+}
+.left .parent-2 .image{
+    width:70%;
+    
+    background-color: lightslategray;
+    padding-bottom: 150px;
+    padding-right: 200px;
+}
+/* css for right side */
+section .right{
+    width:25%;
+    
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.aboutme{
+    width:100%;
+    background-color:#fff;
+    padding:20px;
+    margin-left:5px;
+}
+.right .aboutme .img{
+    width:20%;
+    background-color: lightslategray;
+    padding-bottom: 100px;
+    padding-right: 200px;
+}
+.right .popular{
+    width:100%;
+    margin-top:10px;
+    display: inline-block;
+    background-color: azure;
+    padding:20px;
+    margin-left:5px;
+}
+.right .popular .image{
+    width:20%;
+    background-color: lightslategray;
+    padding:50px;
+    margin:5px;
+}
+.followme{
+    width:100%;
+    margin-top:10px;
+    display: inline-block;
+    background-color: azure;
+    padding:20px;
+    margin-left: 5px;
+}
+footer{
+    width:99%;
+    
+    background-color: #808080;
+    margin-top: 5px;
+    
+}
+.footer h2{
+    text-align: center;
+    padding:10px;
+}
+    
+    

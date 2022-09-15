@@ -22,17 +22,23 @@ nav{
 section{
     background-color:gray;
     overflow:hidden;
+    margin:5px;
 }
 section h3{
-    width:100%;
-    border:1px  solid #808080;
-    background-color: #808080;
+    width:99%;
+    border:1px  solid #333;
+    background-color: #333;
     text-align: center;
+    padding:60px;
+    margin:10px;
+    color:#fff;
+    font-size: 30px;
+
     
 }
 .grid{
     padding:10px;
-    margin-left:5px;
+    
 }
 .grid .column{
     width: 32%;
