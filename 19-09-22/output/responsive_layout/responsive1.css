@@ -1,0 +1,375 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+ @media(min-width:575px){
+    body{
+        background-color: lightgrey;
+    }
+    header{
+        width:95%;
+        margin:0px auto;
+    }
+    .header-section{
+        text-align: center;
+        padding:30px;
+        background-color: #fff;
+    }
+    .header-section p{
+        padding:20px;
+    }
+    nav{
+        background-color: #000;
+        text-align: center;
+    }
+    ul li{
+        color:#fff;
+        display: inline-block;
+        padding: 10px;
+    }
+    ul .nav:last-child{
+        float:none;
+
+    }
+    section{
+        width:95%;
+        
+        margin:0px auto;
+    }
+    section .row-1{
+        width:100%;
+        display: inline-block;
+    }
+    .row-1 .parent-1{
+        background-color: #fff;
+        
+        margin-top: 10px;
+    }
+    .parent-1 .child-1{
+      
+        margin-left: 10px;
+    }
+
+    .child-1 .image{
+        width:100%;
+        background-color: lightslategray;
+    }
+    .image img{
+        width: 100%;
+    }
+    .row-1 .parent-2{
+        margin-top: 10px;
+        background-color: #fff;
+        
+       
+    }
+    .parent-2 .child-1{
+      
+        margin-left: 10px;
+    }
+    section .column-1{
+        width:100%;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+    .aboutme{
+        width:100%;
+        background-color:#fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .aboutme .img{
+        
+        background-color: lightslategray;
+        width:60%;
+    }
+    .img img{
+        width:100%;
+    }
+    .column-1 .popular{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color: #fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .popular .img{
+        width:100%;
+        background-color: lightslategray;
+        margin-top: 20px;
+        
+    }
+    .followme{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color:#fff;
+        padding:20px;
+        margin-left: 5px;
+    }
+    footer{
+        width:95%;
+        margin:0 auto;
+        
+        background-color: #808080;
+        margin-top: 10px;
+        
+    }
+    .footer h2{
+        text-align: center;
+        padding:10px;
+    }
+   
+}
+
+@media(min-width:767px){
+    body{
+        background-color: lightgrey;
+    }
+    header{
+        width:95%;
+        margin:0px auto;
+    }
+    .header-section{
+        text-align: center;
+        padding:30px;
+        background-color: #fff;
+    }
+    .header-section p{
+        padding:20px;
+    }
+    nav{
+        background-color: #000;
+        text-align: center;
+    }
+    ul li{
+        color:#fff;
+        display: inline-block;
+        padding: 10px;
+    }
+    ul .nav:last-child{
+        float:none;
+
+    }
+    section{
+        width:95%;
+        
+        margin:0px auto;
+    }
+    section .row-1{
+        width:60%;
+        display: inline-block;
+    }
+    .row-1 .parent-1{
+        background-color: #fff;
+        
+        margin-top: 10px;
+    }
+    .parent-1 .child-1{
+      
+        margin-left: 10px;
+    }
+
+    .child-1 .image{
+        width:70%;
+        background-color: lightslategray;
+    }
+    .image img{
+        width: 100%;
+    }
+    .row-1 .parent-2{
+        margin-top: 10px;
+        background-color: #fff;
+        
+       
+    }
+    .parent-2 .child-1{
+      
+        margin-left: 10px;
+    }
+    section .column-1{
+        width:36%;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+    .aboutme{
+        width:100%;
+        background-color:#fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .aboutme .img{
+        
+        background-color: lightslategray;
+        width:60%;
+    }
+    .img img{
+        width:100%;
+    }
+    .column-1 .popular{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color: #fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .popular .img{
+        width:60%;
+        background-color: lightslategray;
+        margin-top: 20px;
+        
+    }
+    .followme{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color:#fff;
+        padding:20px;
+        margin-left: 5px;
+    }
+    footer{
+        width:95%;
+        margin:0 auto;
+        
+        background-color: #808080;
+        margin-top: 10px;
+        
+    }
+    .footer h2{
+        text-align: center;
+        padding:10px;
+    }
+   
+}
+@media(min-width:1200px) {
+    
+    body{
+       background-color: lightgrey;
+    }
+    header{
+        width:95%;
+        margin:0px auto;
+    }
+    .header-section{
+        text-align: center;
+        padding:30px;
+        background-color: #fff;
+    }
+    .header-section p{
+        padding:20px;
+    }
+    nav{
+        background-color: #000;
+        text-align: start;
+    }
+    ul li{
+        color:#fff;
+        display: inline-block;
+        padding: 10px;
+    }
+    ul .nav:last-child{
+        float:right;
+
+    }
+    section{
+        width:95%;
+        
+        margin:0px auto;
+    }
+    section .row-1{
+        width:60%;
+        display: inline-block;
+    }
+    .row-1 .parent-1{
+        background-color: #fff;
+        
+        margin-top: 10px;
+    }
+    .parent-1 .child-1{
+      
+        margin-left: 10px;
+    }
+
+    .child-1 .image{
+        width:70%;
+        background-color: lightslategray;
+    }
+    .image img{
+        width: 100%;
+    }
+    .row-1 .parent-2{
+        margin-top: 10px;
+        background-color: #fff;
+        
+       
+    }
+    .parent-2 .child-1{
+      
+        margin-left: 10px;
+    }
+    section .column-1{
+        width:36%;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+    .aboutme{
+        width:100%;
+        background-color:#fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .aboutme .img{
+        
+        background-color: lightslategray;
+        width:60%;
+    }
+    .img img{
+        width:100%;
+    }
+    .column-1 .popular{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color: #fff;
+        padding:20px;
+        margin-left:5px;
+    }
+    .popular .img{
+        width:60%;
+        background-color: lightslategray;
+        margin-top: 20px;
+        
+    }
+    .followme{
+        width:100%;
+        margin-top:10px;
+        display: inline-block;
+        background-color:#fff;
+        padding:20px;
+        margin-left: 5px;
+    }
+    footer{
+        width:95%;
+        margin:0 auto;
+        
+        background-color: #808080;
+        margin-top: 10px;
+        
+    }
+    .footer h2{
+        text-align: center;
+        padding:10px;
+    }
+}
+
+
+
+    

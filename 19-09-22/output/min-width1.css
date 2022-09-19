@@ -1,0 +1,27 @@
+.main{
+    background-color: pink;
+}
+@media(min-width: 575px) {
+    .main{
+        background-color: red;
+    }
+  }
+  @media(min-width: 767px) {
+    .main {
+        width: 49%;
+        background-color: green;
+    }
+  }
+  @media(min-width: 991px) {
+    .main{
+        width:73%;
+        background-color: rgb(179, 173, 230);
+    }
+  }
+  @media(min-width: 1200px) {
+    .main{
+        width:73%;
+        background-color: orange;
+    }
+  }
+  

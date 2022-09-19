@@ -1,0 +1,29 @@
+@media(min-width: 575px) {
+    .child{
+        width:98%;
+        background-color: red;
+        display:inline-block;
+    }
+  }
+  @media(min-width: 767px) {
+    .child {
+        width: 45%;
+        display: inline-block;
+        background-color: green;
+    }
+  }
+  @media(min-width: 991px) {
+    .child{
+        width:33%;
+        display: inline-block;
+        background-color: rgb(179, 173, 230);
+    }
+  }
+  @media(min-width: 1200px) {
+    .child{
+        width:23%;
+        display: inline-block;
+        background-color: orange;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+
+@media(max-width: 1200px) {
+    .child{
+        width:23%;
+        display: inline-block;
+
+      background-color: lightblue;
+    }
+  }
+  @media(max-width: 991px) {
+    .child {
+        width: 49%;
+        display: inline-block;
+      background-color: gray;
+    }
+  }
+  @media(max-width: 767px) {
+    .child{
+        width:100%;
+      background-color: rgb(173, 230, 197);
+    }
+  }
+  
