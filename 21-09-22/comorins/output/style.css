@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: lightgrey;
+}
+header{
+    width:100%;
+}
+.header-section{
+    background-color: #fff;
+    padding:10px;
+}
+.parent{
+    background-color: bisque;
+    margin-top: 10px;
+}
+.left-section .image{
+    background-color: #fff;
+    
+    width:75%;
+}
+.child{
+    background-color: blanchedalmond;
+    margin-left:10px;
+    margin-top: 10px;
+    
+}
+.right-section .image{
+    background-color: #fff;
+    width: 75%;
+}
+footer{
+    background-color: darkgray;
+}
+   

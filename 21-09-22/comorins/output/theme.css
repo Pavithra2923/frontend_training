@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding:0px;
+}
+header{
+    width:100%;
+}
+h1{
+    background-color: lightgray;
+}
+nav h2{
+    background-color: darkgrey;
+}
+section{
+    width:100%;
+}
+.box{
+    
+    background-color: lightgray;
+    padding:130px;
+}
+.box1{
+    
+    background-color: darkgrey;
+    padding:130px;
+    border:5px solid #fff;
+}
+footer{
+    margin-top: 10px;
+    background-color: #808080;
+    
+}
+@media(min-width:575px){
+    header{
+        width:100%;
+    }
+    h1{
+        background-color: lightgray;
+    }
+    nav h2{
+        background-color: darkgrey;
+    }
+    section{
+        width:100%;
+    }
+    .box{
+        
+        background-color: lightgray;
+        padding:130px;
+    }
+    .box1{
+        
+        background-color: darkgrey;
+        padding:130px;
+        border:5px solid #fff;
+    }
+    footer{
+        margin-top: 10px;
+        background-color: #808080;
+        
+    }
+}
+@media(min-width:767px){
+    header{
+        width:100%;
+    }
+    h1{
+        background-color: lightgray;
+    }
+    nav h2{
+        background-color: darkgrey;
+    }
+    section{
+        width:100%;
+    }
+    .box{
+        
+        background-color: lightgray;
+        padding:130px;
+    }
+    .box1{
+        
+        background-color: darkgrey;
+        padding:130px;
+        margin-left: 5px;
+    }
+    footer{
+        margin-top: 10px;
+        background-color: #808080;
+        
+    }
+}
+@media(min-width:991px){
+    header{
+        width:100%;
+    }
+    h1{
+        background-color: lightgray;
+    }
+    nav h2{
+        background-color: darkgrey;
+    }
+    section{
+        width:100%;
+    }
+    .box{
+        background-color: lightgray;
+        padding:130px;
+    }
+    .box1{
+        background-color: darkgrey;
+        padding:130px;
+        margin-left: 10px;
+    }
+    footer{
+        margin-top: 10px;
+        background-color: #808080;
+        
+    }
+}
+@media(min-width:1200px){
+    header{
+        width:100%;
+    }
+    h1{
+        background-color: lightgray;
+    }
+    nav h2{
+        background-color: darkgrey;
+    }
+    section{
+        width:100%;
+    }
+    .box{
+        background-color: lightgray;
+        padding:130px;
+    }
+    .box1{
+        background-color: darkgrey;
+        padding:130px;
+        margin-left: 10px;
+    }
+    footer{
+        margin-top: 10px;
+        background-color: #808080;
+        
+    }
+}
