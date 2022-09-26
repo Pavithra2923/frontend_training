@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #F5F5F5;
+
+}
+/* login-page left side starts here */
+.login-content h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 87px 0px 24px 0px;
+    color: #000000;
+}
+.login-content p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+   
+    color: #5A9CD4;
+}
+.login-content img{
+    
+    margin: 64px 0px 94px 29px;
+}
+/* login-page left content ends here */
+/* login-page right content starts here */
+
+.login-portal img{
+    margin: 77px 283px 39px 110px;
+}
+.form-section{
+    margin-top:65px;
+}
+.box-email{
+    width:65%;
+    background: #FFFFFF;
+    border: 1px solid #5A9CD4;
+    border-radius: 5px;
+    margin:0 auto;
+    
+}
+.box-password{
+    width: 65%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.forgot-password{
+    margin:20px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #5A9CD4;
+}
+.sign-in{
+    width: 65%;
+    margin: 0px auto;
+}
+.last-text{
+    margin-top:60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+/* login-page right content ends here */
