@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    background-image: url("../image/bg-image.png");
+}
+.header-section{
+    width:80%;
+    margin:0 auto;
+}
+.header-section ul{
+    margin-left: 76px;
+}
+.header-section .navsection-li{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 141.69%;
+    margin-left: 32px;
+}
+.header-section .navsection-a{
+    color: #005579 !important; 
+    padding:0px !important;    
+}
+/* banner section starts here */
+.banner-section{
+    display: table;
+    margin-top: 150px;
+    padding-bottom: 70px;
+}
+
+.banner-content{
+    display: table-cell;
+
+}
+.banner-section h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 141.69%;
+    
+    
+    color: #005579;
+    
+}
+.banner-section p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    width:90%;
+    color: #3EBDCC;
+    
+}
+.banner-image{
+    background: #3EBDCC;
+    border-radius: 51px;
+    
+    display: table-cell;
+    width: 350px;
+    height: 270px;
+
+}
+/* form section starts here */
+section .parent{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #005579;
+    border-radius: 20px;
+}

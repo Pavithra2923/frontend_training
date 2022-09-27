@@ -5,6 +5,7 @@
 body{
     background: #FFFFFF;
 }
+/* header starts here */
 header{
     
     margin: 0 auto;
@@ -16,7 +17,7 @@ header{
 .user-nav{
     display: flex;
 }
-
+/* dash board section starts here */
 .dash-board-ul{
     margin-top: 50px;
 }
@@ -40,6 +41,7 @@ header{
     color: #000000;
 
 }
+/* right side section starts here */
 .right-section{
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     
@@ -50,6 +52,7 @@ header{
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 0px 0px 8px 8px;
+    border-top: none;
     
 
 }
@@ -77,9 +80,6 @@ header{
     font-weight: 700;
     font-size: 17px;
     line-height: 21px;
-    /* identical to box height */
-    
-    
     color: #000000;
     
 }
@@ -206,6 +206,16 @@ header{
     border-radius: 8px;
     width:100%;
 }
+.section-last label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 26px;
+    color: #000000;
+    
+}
 .last-content-1{
     width: 50%;
     display: inline-block;
@@ -238,6 +248,7 @@ header{
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    margin-top: 30px;
 
 }
 .last-content-2 p{
@@ -285,4 +296,12 @@ header{
     display: block;
     background: #0374BC;
     border-radius: 20px;
+    padding: 0px 33px;
+    margin: 23px 0px 29px 51px;
+}
+.child-button{
+    display:block;
+    margin:0px 80px;
+    padding: 10px;
+
 }
