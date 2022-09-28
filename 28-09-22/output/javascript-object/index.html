@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">         
+</head>
+  <body>
+    <script>
+        let resume={name:"Pavithra M",
+                     hobbies:["playing candy-crush,cooking,yoga"],
+                     education:[{
+                                standard:"10th",
+                                yop:2016,
+                                mark:89,
+                                institute:"S.M.R.V Hr sec school"},
+                                {
+                                standard:"12th",
+                                yop:2018,
+                                mark:69,
+                                institute:"S.L.B Govt Hr sec school"
+                                },
+                                {
+                                standard:"college",
+                                yop:2018-2022,
+                                mark:73,
+                                institute:"Cape Institute of Technology",
+                                
+                                },],
+                      personaldetails:[{
+                                        dob:29-07-2001,
+                                        address:"14/7a Muthalimar Street,Krishnankovil,Nagercoil.",
+                                        gender:"female",
+                                        email_id:"pavithra2972001@gmail.com",
+                                        phone_no:7339359531},
+                                        {
+                                        family_details:{
+                                            father:{name:"Mony.M",
+                                            occupation:"Driver"},
+                                            mother:{name:"Latha.M",
+                                            occupation:"Tiffen Center"},
+                                            sister:{name:"Aarthi.M",
+                                            study:"BBA"},
+                                        },
+                                        },],
+                        Certificate:["internship on CCNA","python"],
+                        Area_of_interest:"Networking",
+                        skill:["html","css","networking","python"],
+                               
+                                    
+                        
+                      };
+                      console.log(resume);
+            for(i=0;i<resume.education.length;i++){
+                console.log(resume.education[i].institute);
+            }
+            let total=0;
+            let count=0;
+            for(i=0;i<resume.education[i].mark;i++){
+              if(resume.education[i].standard!="10th"){
+                total=total+resume.education[i];
+                count++;
+              }
+            }console.log(total)
+          
+  </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">         
+</head>
+<body>
+ <!--<input type="number" id="num1"/>
+  <input type="number" id="num2"/>
+  <button onclick="add()">Add</button>-->
+  <input type="text" id="txt"/>
+  <button onclick="add()">Add</button>
+
+  <ul id="todo"></ul>
+
+
+  <script>
+    let list=[];
+    function add(){
+      let todo=document.getElementById("txt").value;
+
+      list.push(todo);
+      console.log(list);
+      display(list);
+      document.getElementById("txt").value="";
+      
+    }
+    
+    function display(list_arr){
+      let element="";
+      for(i=0;i<list_arr.length;i++){
+        element=element+"<li>"+list_arr[i]+"</li>";
+
+      }
+      document.getElementById("todo").innerHTML=element;
+    }
+  </script>
+</body>
+</html>
