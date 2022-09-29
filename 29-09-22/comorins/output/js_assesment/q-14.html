@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">         
+</head>
+<body>
+    <script>
+        function findTriangleType(side1,side2,side3){
+            if(side1==side2 && side2==side3 && side1==side3){
+                console.log("Equilateral triangle")
+            }else if(side1==side2 || side2==side3){
+                console.log("Isosceles triangle")
+            }else{
+                console.log("Sceles triangle")
+            }
+        }findTriangleType(12,12,12)
+        findTriangleType(23,45,45)
+    </script>
+</body>
+</html>
