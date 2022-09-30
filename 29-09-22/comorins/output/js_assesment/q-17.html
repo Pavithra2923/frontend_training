@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-        function isNaN(a){
-            if(a==Number){
-                console.log("false");
+        function checkLeapYear(year){
+            if(year%4==0 && year%100!=0){
+                console.log("given year is leap year"+" "+year)
+            }else{
+                console.log("given year is not leap year"+" "+year)
             }
-
-        }isNaN("12")
-
+        }checkLeapYear(2025)
     </script>
 </body>
 </html>
