@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet"/>
+<title>Dream To-Do Lists</title>
+</head>
+<body>
+<div class="container">
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">Dream To-Do List</h2>
+    <input type="text" id="txt" placeholder="Title...">
+    <button onclick="addElement()" class="addBtn">&plus;</button>
+  </div>
+  <ul id="todo"></ul>
+</div>
+<script>
+// Create a new list item when clicking on the "Add" button  
+let list=[];
+function addElement() {
+  // let li = document.createElement("li");
+  let todo = document.getElementById("txt").value;
+  // let t = document.createTextNode(todo);
+  // li.appendChild(t);
+  list.push(todo);
+  display(list);
+  console.log(list);
+  document.getElementById("txt").value = "";
+  function display(list_arr){
+      let element="";
+      for(i=0;i<list_arr.length;i++){
+        element=element+"<li>"+list_arr[i]+"</li>";
+
+      }
+      document.getElementById("todo").innerHTML=element;
+    }
+    // Add a "checked" symbol when clicking on a list item
+    var list_check= document.querySelector('ul');
+    list_check.addEventListener('click', function(check){
+      if (check.target.tagName === 'LI'){
+        check.target.classList.toggle('checked');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
