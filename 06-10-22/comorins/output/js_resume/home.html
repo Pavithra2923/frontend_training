@@ -7,20 +7,21 @@
     <title>Resume Builder</title>      
 </head>
   <body>
+    <h2>Resume</h2>
     Name:
-  </br><input type="text" onkeyup="addDetails('name',this.value)" id="name"/></br>
+  </br><input type="text" onkeyup="addDetails('name',this.value)" id="name"/></br></br></br>
     Email:
-  </br><input type="text" onkeyup="addDetails('email',this.value)" id="email"/></br>
+  </br><input type="text" onkeyup="addDetails('email',this.value)" id="email"/></br></br></br>
     Phone No:
-  </br><input type="number" onkeyup="addDetails('phone',this.value)" id="phone"/></br>
+  </br><input type="number" onkeyup="addDetails('phone',this.value)" id="phone"/></br></br></br>
     Role:
-  </br><input type="text" onkeyup="addDetails('role',this.value)" id="role"/></br>
+  </br><input type="text" onkeyup="addDetails('role',this.value)" id="role"/></br></br></br>
   Objective:<br/>
-  <textarea onkeyup="addDetails('objective',this.value)" id="objective"></textarea><br/>
+  <textarea onkeyup="addDetails('objective',this.value)" id="objective"></textarea><br/></br></br>
     Skills:<br/>
-    <input type="text" onkeyup="addDetails('skill',this.value,0)" id="skill"/></br>
-    <input type="text" onkeyup="addDetails('skill',this.value,1)" id="skill"/></br>
-    <input type="text" onkeyup="addDetails('skill',this.value,2)" id="skill"/></br>
+    <input type="text" onkeyup="addDetails('skill',this.value,0)" id="skill"/>
+    <input type="text" onkeyup="addDetails('skill',this.value,1)" id="skill"/>
+    <input type="text" onkeyup="addDetails('skill',this.value,2)" id="skill"/></br></br></br>
     <h3>Education Details</h3>
     <table>
       <thead>
@@ -109,27 +110,34 @@
     </table>
     <h3>Personal Details</h3>
     Fathers_name:<br/>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,0,'Daughter_of')" id="Daughter_of"/></br>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'Daughter_of')" id="Daughter_of"/></br></br></br>
     Date_of_Birth:<br/>
-    <input type="date" onkeyup="addDetails('personaldetails',this.value,1,'dob')" id="dob"/></br>
+    <input type="date" onkeyup="addDetails('personaldetails',this.value,'dob')" id="dob"/></br></br></br>
     Gender:<br/>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,2,'gender')" id="gender"/></br>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'gender')" id="gender"/></br></br></br>
     Marital Status:<br/>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,3,'marital_status')" id="marital_status"/></br>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'marital_status')" id="marital_status"/></br></br></br>
     Address:<br/>
-    <textarea onkeyup="addDetails('personaldetails',this.value,4,'address')" id="address"></textarea></br>
-    Area of interest:
-  </br><input type="text" onkeyup="addDetails('area_of_interest',this.value)" id="area_of_interest"/></br>
+    <textarea onkeyup="addDetails('personaldetails',this.value,'address')" id="address"></textarea></br></br></br>
+   
   Hobbies:<br/>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,0,'Hobbies',0)" id="Hobbies"/></br>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,1,'Hobbies')" id="Hobbies"/></br>
-    <input type="text" onkeyup="addDetails('personaldetails',this.value,2,'Hobbies')" id="Hobbies"/></br>
-    <button onclick="display()">Submit</button>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,0,'Hobbies')" id="Hobbies"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,1,'Hobbies')" id="Hobbies"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,2,'Hobbies')" id="Hobbies"/></br></br></br>
+  language_known:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/></br></br></br>
+    Area of interest:
+  </br><input type="text" onkeyup="addDetails('area_of_interest',this.value)" id="area_of_interest"/></br></br></br>
+    <button onclick="local_display()">Submit</button>
+    <ul id="order"></ul>
+  
 
     <code id="obj_data"></code>
     <script>
       let a={
-        skill:[],education:[],certification:[],project:[],personaldetails:[]
+        skill:[],education:[],certification:[],project:[],personaldetails:{}
            }
            function addDetails(key,value,index=null,indexkey=null){
             if(index==null && indexkey==null){
@@ -146,9 +154,26 @@
           }
           
         }
-          function display(){
-              document.getElementById("obj_data").innerHTML=JSON.stringify(a);
+        function local_display(){
+          document.getElementById("obj_data").innerHTML=JSON.stringify(a);
+        if(!localStorage.getItem("data")){
+        localStorage.setItem("data",JSON.stringify([]))
+        }
+        let fullresume=JSON.parse(localStorage.getItem("data"))
+        fullresume.push(a)
+        localStorage.setItem("data",JSON.stringify(fullresume));
+        namedisplay();
+}
+        namedisplay()
+        function namedisplay(){
+          let element=""
+          let list_resume=JSON.parse(localStorage.getItem("data"))
+          for(let i=0;i<list_resume.length;i++){
+              element=element+"<li> <a href='view.html?name="+list_resume[i].name +"'target='_blank'>"+list_resume[i].name+"</a></li>"
+              alert(list_resume[i].name);
           }
+          document.getElementById("order").innerHTML=element
+}
         // let resume={name:"Pavithra M",
                     // email_id:"pavithra2972001@gmail.com",
                     // phone_no:7339359531,
@@ -173,7 +198,7 @@
                     //             stream:"CSE"
                                 
                     //             }],
-                    // personaldetails:[{
+                    // personaldetails:{
                     //                 dob:29-07-2001,
                     //                 Daughter_of:"Mony.M",
                     //                 address:"14/7a Muthalimar Street,Krishnankovil,Nagercoil-629001",
@@ -182,7 +207,7 @@
                     //                 marital_status:"unmarried",
                     //         
                     //                 language_known:["english","tamil"]
-                    //             }],
+                    //             },
                     // Certificate:[{
                     //         course_name:"Intership on CCNA",
                     //         institute_name:"Networkz Systems",

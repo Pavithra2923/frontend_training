@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <input type="text" id="txt"/>
+    <button onclick="addElement()">Add</button>
+    <ul id="myUL"></ul>
+    <script>
+    if(!localStorage.getItem("todos")){
+        localStorage.setItem("todos",JSON.stringify([]));
+    }
+    let list=JSON.parse(localStorage.getItem("todos"));
+    function addElement(){
+        let item=document.getElementById("txt").value;
+        list.push(item);
+        localStorage.setItem("todos",JSON.stringify(list))
+        display();
+    }
+    function display(){
+        let element="";
+        let local_list=JSON.parse(localStorage.getItem("todos"));
+        for(let i=0; i<local_list.length;i++){
+            element=element+"<li>"+local_list[i]+" "+"<button onclick='removeItem("+i+")'>del</button>"+"</li>"
+        }
+        document.getElementById("myUL").innerHTML=element
+    }
+    display();
+    function removeItem(position){
+        let list_new=JSON.parse(localStorage.getItem("todos"));
+        list_new.splice(position,1);
+        localStorage.setItem("todos",JSON.stringify(list_new));
+        display();
+    }
+
+    </script>
+
+</body>
+</html>
