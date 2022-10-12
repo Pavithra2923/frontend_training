@@ -13,12 +13,117 @@ header .navul{
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-  
 }
 header a:hover{
     color: pink;
-    
 }
 .login-page .img{
-    width:30%;
+    width:20%;
 }
+
+/* section starts here */
+
+
+section .anchor{
+    text-decoration: none;
+    color:#000000;
+}
+section .card_class{
+   
+   
+    transition: box-shadow .3s;
+    width: 300px;
+    height: 450px;
+    margin: 50px;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    
+    
+}
+.card_class:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+.star{
+    border:1px;
+    background-color: limegreen;
+    width:20%;
+    display: inline-block;
+ 
+}
+.time{
+    margin-right: 10px;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+footer{
+    background-color: #000000;
+}
+footer li{
+    color: #fff;
+}
+  
+/* login page css starts here */
+
+.login-portal img{
+    margin: 20px 283px 30px 110px;
+}
+.form-section{
+    margin-top:40px;
+}
+.box-email{
+    width:65%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin:0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.box-password{
+    width: 65%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.forgot-password{
+    margin:10px auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:#ffa500;
+}
+.sign-in{
+    width: 65%;
+    margin: 0px auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    background-color: #ffa500;
+    border: none;
+}
+.login-page p{
+    margin-top:50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+/* login-page ends here */
+
