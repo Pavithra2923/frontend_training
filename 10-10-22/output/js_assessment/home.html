@@ -18,35 +18,33 @@
       <nav class="navbar navbar-expand-lg navbar-light p-0">
         <img src="image/swiggy_logo.png"/>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navul navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <div class="d-flex flex-row" >
+            <div class="p-5" >
+              <a class="nav-link" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
               </svg>    Location</a>
-            </li>
-          </ul>
-          <ul class="navul navbar-nav mr-auto">
-            <li class="nav-item active">
+            </div>
+            <div class="p-5"></div>
+            <div class="p-5"></div>
+          </div>
+          <div class="d-flex flex-row-reverse">
+            <div class="p-2">
               <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>    Search</a>
-            </li>
-            
-            <li class="nav-item active">
+            </div>
+            <div class="p-2">
               <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
               </svg>    Cart</a>
-              
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="login.html" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg>       Sign-in</a>
-            </li>
-            </ul>
-          </span>
+            </div>
+            <div class="p-2"> <a class="nav-link" href="login.html" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>       Sign-in</a>
+          </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -57,7 +55,7 @@
         <h1>Popular restaurants in and around Nagercoil</h1>
         <div class="row">
           <div class="col-4">
-            <a class="anchor" href="id.html">
+            <a class="anchor" href="id.html" onclick="getid()">
               <div class="card_class card">
                 <img class="card-img-top" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/apxoeoqyzisb7wl3jkoe"/>
                 <div class="card-body">
@@ -87,7 +85,7 @@
             </a>
           </div>
           <div class="col-4">
-            <a class="anchor" href="id.html">
+            <a class="anchor" href="id.html" onclick="getid()">
               <div class="card_class card">
                 <img class="card-img-top" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ifjmqufoig2cthp2eijo"/>
                 <div class="card-body">
@@ -118,7 +116,7 @@
            
           </div>
           <div class="col-4">
-            <a class="anchor" href="id.html ">
+            <a class="anchor" href="id.html " onclick="getid()">
               <div class="card_class card">
                 <img class="card-img-top" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/souiieye4fbhw1rxsvm6"/>
                 <div class="card-body">
@@ -142,15 +140,12 @@
                   </p>
                   <hr>
                   <p style="color:brown">Get 50% offer Usecode WELCOME50</p>
-                  
-                </div>
+                 </div>
               </div>
             </a>
-           
           </div>
         </div>
-      </div>
-      
+      </div> 
     </section>
     <footer>
       <div class="container">
