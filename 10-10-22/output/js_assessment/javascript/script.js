@@ -3,6 +3,7 @@ let hotel_details=[
                 {
                     hotel_name:'Arya Bhavan',
                     "catagory":'Vegitarian',
+                    "location":"Vadasery",
                     "menu":[
                             {
                                 "id":1,
@@ -33,6 +34,7 @@ let hotel_details=[
                 {
                     hotel_name:'Odel Restarunt',
                     "catagory":['Vegitarian','Non-vegitarian'],
+                    "location":"Nagercoil",
                     "menu":[
                             {
                                 "id":4,
@@ -62,6 +64,7 @@ let hotel_details=[
                 {
                     hotel_name:'Dominos Pizza',
                     "catagory":['Vegitarian','Non-vegitarian'],
+                    "location":"Nagercoil",
                     "menu":[
                             {
                                 "id":7,
@@ -145,7 +148,11 @@ function returnCards(){
      let product = ''
     for (let i = 0; i <product_list.length; i++) {
 
-        product +='<div class="row"><div class="card mt-4 col-4 p-0"><img id="url" src="'+product_list[i].menu[i].img+'" class="card-img-top"><div class="card-body"><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'+product_list[i].hotel_name+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'+product_list[i].catagory+'</a></div><div class="card-footer bg-white border-0"><small class="text-muted">'+'</small></div></div></div>'
+        product +='<div class="row"><div class="col-6"><div class="card mt-4 col-4 p-0"><img id="url" src="'+product_list[i].menu[i].img+
+        '" class="card-img-top"><div class="card-body"><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='
+        +product_list[i].hotel_name+'">'+product_list[i].hotel_name+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
+        +product_list[i].catagory+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
+        +product_list[i].location+'</a></div></div><div class="card-footer bg-white border-0"><small class="text-muted">'+'</small></div></div></div>'
         
         
         
