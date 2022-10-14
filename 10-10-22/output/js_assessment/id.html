@@ -8,16 +8,49 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Product Page</title>
-    <script src="javascript/script.js"></script>
     <link href="css/theme.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   </head>
   <body>
+    <div class="container">
+      <div id="items"></div>
+    </div>
     <script>
-        let queryString = window.location.search;
-            let urlParams = new URLSearchParams(queryString);
-            let product = urlParams.get('id')
-        alert(product);
-    </script>
+      let product_list = JSON.parse(localStorage.getItem('product_detail'));
+      const  queryString = window.location.search;
+      const  urlParams = new URLSearchParams(queryString);
+    
+      const  hotel= urlParams.get("hotel_name")
+      alert(hotel);
+      let product_menu=JSON.parse(localStorage.getItem("product_detail"));
+      let element="";
+              for(let i=0;i<product_menu.length;i++){
+                if(hotel==product_menu[i].hotel_name){
+                  
+                 element +='<div class="row"><div class="card mt-4 col-4 p-0"><img id="url" src="'+product_menu[i].menu[i].img+'" class="card-img-top"><div class="card-body"><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_menu[i].hotel_name+'">'+product_menu[i].hotel_name+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_menu[i].hotel_name+'">'+product_list[i].catagory+'</a></div><div class="card-footer bg-white border-0"><small class="text-muted">'+'</small></div></div></div>'
+        
+                
+                //   for(i=0;i<food.length;i++){
+                //     element=element+`<div class="card-mb-3" style="width:100%">'
+                      
+                //       <div class="row">
+                //       <img src="" class="card-img-top">
+                //       <div class="card-body">
+                //         <h5 class="card-title"></h5>
+                //         <h5 class="card-title"></h5>
+                //         <p class="card-text"></p>
+                //         <a href="#" class="btn btn-primary">ADD to Cart</a>
+                //       </div>
+                //     </div>`
+                //     document.getElementById("items").innerHTML=element;
+                //   }
+                // }
+                // }
+                }
+              }console.log(element)
+               document.getElementById("items").innerHTML=element
+            
+            // gethotelname()
+            </script>
   </body>
-  </html>
+    </html>
