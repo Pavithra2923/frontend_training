@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Resume Builder</title> 
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>     
+</head>
+  <body>
+    <h2>Resume</h2>
+    Name:
+  </br><input type="text" onkeyup="addDetails('name',this.value)" id="name"/></br></br></br>
+    Email:
+  </br><input type="text" onkeyup="addDetails('email',this.value)" id="email"/></br></br></br>
+    Phone No:
+  </br><input type="number" onkeyup="addDetails('phone',this.value)" id="phone"/></br></br></br>
+    Role:
+  </br><input type="text" onkeyup="addDetails('role',this.value)" id="role"/></br></br></br>
+  Objective:<br/>
+  <textarea onkeyup="addDetails('objective',this.value)" id="objective"></textarea><br/></br></br>
+    Skills:<br/>
+    <input type="text" onkeyup="addDetails('skill',this.value,0)" id="skill"/>
+    <input type="text" onkeyup="addDetails('skill',this.value,1)" id="skill"/>
+    <input type="text" onkeyup="addDetails('skill',this.value,2)" id="skill"/></br></br></br>
+    <h3>Education Details</h3>
+    <table>
+      <thead>
+        
+        <th>Course</th>
+        <th>YOP</th>
+        <th>Institute</th>
+        <th>Mark_percentage</th>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <td><input type="text" onkeyup="addDetails('education',this.value,0,'course')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,0,'yop')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,0,'institute')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,0,'mark_p')"/></td>
+        </tr>
+        <tr>
+          
+          <td><input type="text" onkeyup="addDetails('education',this.value,1,'course')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,1,'yop')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,1,'institute')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,1,'mark_p')"/></td>
+        </tr>
+        <tr>
+         
+          <td><input type="text" onkeyup="addDetails('education',this.value,2,'course')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,2,'yop')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,2,'institute')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,2,'mark_p')"/></td>
+        </tr>
+        <tr>
+         
+          <td><input type="text" onkeyup="addDetails('education',this.value,3,'course')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,3,'yop')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,3,'institute')"/></td>
+          <td><input type="text" onkeyup="addDetails('education',this.value,3,'mark_p')"/></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <h3>Certifications</h3>
+    <table>
+      <thead>
+        <th>Course_Name</th>
+        <th>Institute_Name</th>
+        <th>Duration</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,0,'course_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,0,'institute_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,0,'duration')"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,1,'course_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,1,'institute_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,1,'duration')"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,2,'course_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,2,'institute_name')"/></td>
+          <td><input type="text" onkeyup="addDetails('certification',this.value,2,'duration')"/></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Project Details</h3>
+    <table>
+      <thead>
+        <th>Title</th>
+        <th>Domain</th>
+        <th>Abstract</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" onkeyup="addDetails('project',this.value,0,'title')"/></td>
+          <td><input type="text" onkeyup="addDetails('project',this.value,0,'domain')"/></td>
+          <td><textarea onkeyup="addDetails('project',this.value,0,'abstract')"></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="text" onkeyup="addDetails('project',this.value,1,'title')"/></td>
+          <td><input type="text" onkeyup="addDetails('project',this.value,1,'domain')"/></td>
+          <td><textarea onkeyup="addDetails('project',this.value,1,'abstract')"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Personal Details</h3>
+    Fathers_name:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'Daughter_of')" id="Daughter_of"/></br></br></br>
+    Date_of_Birth:<br/>
+    <input type="date" onkeyup="addDetails('personaldetails',this.value,'dob')" id="dob"/></br></br></br>
+    Gender:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'gender')" id="gender"/></br></br></br>
+    Marital Status:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'marital_status')" id="marital_status"/></br></br></br>
+    Address:<br/>
+    <textarea onkeyup="addDetails('personaldetails',this.value,'address')" id="address"></textarea></br></br></br>
+   
+  Hobbies:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,0,'Hobbies')" id="Hobbies"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,1,'Hobbies')" id="Hobbies"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,2,'Hobbies')" id="Hobbies"/></br></br></br>
+  language_known:<br/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/>
+    <input type="text" onkeyup="addDetails('personaldetails',this.value,'languages')" id="languages"/></br></br></br>
+    Area of interest:
+  </br><input type="text" onkeyup="addDetails('area_of_interest',this.value)" id="area_of_interest"/></br></br></br>
+    <button class="api_ajax">Submit</button>
+
+  
+
+    <code id="obj_data"></code>
+    <script>
+      let a={
+        skill:[],education:[],certification:[],project:[],personaldetails:{}
+           }
+           function addDetails(key,value,index=null,indexkey=null){
+            if(index==null && indexkey==null){
+              a[key]=value;
+            }
+            else if(indexkey==null){
+                a[key][index]=value;
+            }
+            else{
+            if(!a[key][index]){
+            a[key][index]={};
+            }
+            a[key][index][indexkey]=value;
+          }
+          
+        }
+
+        $(document).ready(function(){
+            $(".api_ajax").click(function(){
+                $.ajax({
+                    type : "post",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request : "create_resume",
+                        user : "pavithra",
+                        resume : a
+                    },
+                    success :function(data){
+                        console.log(data)
+
+                    }
+                })
+                $.ajax({
+                    type : "get",
+                    url:" http://karka.academy/api/action.php",
+                    data:{
+                        request : "get_user_resume",
+                        user : "pavithra"
+                    },
+        
+                })
+
+            })
+        })
+
+                    
+  </script>
+  </body>
+</html>

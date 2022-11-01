@@ -71,7 +71,7 @@ section .card_class{
 footer{
     background-color: #000000;
 }
-footer li{
+footer a{
     color: #fff;
 }
   

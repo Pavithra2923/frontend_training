@@ -133,40 +133,45 @@ function addElement(){
     let loginPass=document.getElementById('login-pass').value;
   if(localStorage.getItem('user')){
      let login_user=JSON.parse(localStorage.getItem('user'));
+     let test=true
      for(let i=0;i<login_user.length;i++){
-        if(loginEmail === login_user[i].email && loginPass ===login_user[i].pwd) {
+        if(loginEmail === login_user[i].email && loginPass === login_user[i].pwd) {
             window.location.replace("home.html"); 
-            break;
-        }else{
-            alert("please username and password check");
-            break;
+            test=false
         }
-    }}
+        else{
+            test=true 
+        }
+    }
+    if(test==true){
+        alert("please check ur email and password")  
+    }
+   }
+   
 }
-function returnCards(){
+
+
+                                   
+
+function viewProduct(){
     let product_list=JSON.parse(localStorage.getItem("product_detail"));
-     let product = ''
+     let product = '';
     for (let i = 0; i <product_list.length; i++) {
 
-        product +='<div class="row"><div class="col-6"><div class="card mt-4 col-4 p-0"><img id="url" src="'+product_list[i].menu[i].img+
-        '" class="card-img-top"><div class="card-body"><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='
-        +product_list[i].hotel_name+'">'+product_list[i].hotel_name+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
-        +product_list[i].catagory+'</a><br/><a class="card-text font-weight-bold" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
+        product +='<div class="card mt-5 mr-auto ml-auto mb-5 col-3 p-0"><img id="url" src="'+product_list[i].menu[i].img+
+        '" class="card-img-top"><div class="card-body"><a class="card-text font-weight-bold" style="color:black;text-decoration:none" id="content" href="id.html?hotel_name='
+        +product_list[i].hotel_name+'">'+product_list[i].hotel_name+'</a><br/><a class="card-text font-weight-bold" style="color:black;text-decoration:none" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
+        +product_list[i].catagory+'</a><br/><a class="card-text font-weight-bold" style="color:black;text-decoration:none" id="content" href="id.html?hotel_name='+product_list[i].hotel_name+'">'
         +product_list[i].location+'</a></div></div><div class="card-footer bg-white border-0"><small class="text-muted">'+'</small></div></div></div>'
-        
-        
-        
     }
-    // return "<div class=\"products-cards  row\">" +product_list.map(title=> `
-    // <div class=\"card-item\" text-center col-3"><div class="product-header"><a href="id.html?hotel_name="  title.hotel_name}"><img src="{title.img}"/></a></div><div class="product-content"><h4>${title.price}</h4><p>${title.serve_for}</p><p>${title.description}</p></div></div>`).join('') + "</div>";
-    document.getElementById("display").innerHTML = product;
-  }
-  returnCards();
-//   document.getElementById("main").innerHTML = returnCards(product_list);
+    document.getElementById('display').innerHTML = product;
+
+}
+  viewProduct()
  
  
 //  store id  value to localstorage
- 
+   
 //  function local_display(){
 //     if(!localStorage.getItem("hotel_id")){
 //      localStorage.setItem("hotel_id",JSON.stringify([]));

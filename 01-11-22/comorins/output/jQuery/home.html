@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <code class="main"></code>
+    <script>
+        $(document).ready(function(){
+
+                $.ajax({
+                    url : "https://jsonplaceholder.typicode.com/posts/",
+                    success : function(data){
+                       
+                        let length=data.length
+                        for(i=0;i<length;i++){
+                            let id=data[i].id;
+                            let title=data[i].title;
+                            let body=data[i].body;
+
+                            let add="<div class=card><h3>"+id+"<div class=card-body><p>"+title+"</p><div class=card-body><p>"+body+"</p</div>"
+                            $(".main").append(add);
+                            console.log(add)
+                        }
+                         
+                }
+                })
+            
+
+        })
+    </script>
+</body>
+</html>

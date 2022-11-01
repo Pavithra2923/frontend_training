@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <style>
+        .colorchange{
+            color:red;
+            background-color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div id="main"></div> -->
+    <!-- <button>Onclick</button>
+    <script>
+        $(document).ready(function(){
+        //    $("h1").hide()
+        // $("button").click(function(){
+            // $("#main").css("color","blue")
+
+            // $("#main").toggleClass("colorchange")
+            $("button").on("click",function(){
+                $("#main").toggleClass("colorchange")
+
+            })
+        });
+
+        // });
+    </script> -->
+
+    <h1>jQuery</h1>
+                          
+   <script>
+    $(document).ready(function(){
+        $("h1").on({
+            click : function(){
+                $(this).css("background-color","blue");
+            },
+            mouseenter : function(){
+                $(this).css("background-color","green");
+            },
+            mouseleave : function(){
+                $(this).css("background","none");
+            }
+
+        })
+    })
+   </script> 
+</body>
+</html>
