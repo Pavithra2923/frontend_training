@@ -132,8 +132,21 @@
     Area of interest:
   </br><input type="text" onkeyup="addDetails('area_of_interest',this.value)" id="area_of_interest"/></br></br></br>
     <button class="api_ajax">Submit</button>
+    
+  <table class="resumes">
+    <thead>
+      <tr>
+        <th>s.no</th>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>action</th> 
+      </tr>
+    </thead>
+    <tbody class="empty">
 
-  
+    </tbody>
+  </table>
 
     <code id="obj_data"></code>
     <script>
@@ -157,34 +170,100 @@
         }
 
         $(document).ready(function(){
-            $(".api_ajax").click(function(){
+             $(".api_ajax").click(function(){
                 $.ajax({
                     type : "post",
                     url:" http://karka.academy/api/action.php",
                     data:{
                         request : "create_resume",
-                        user : "pavithra",
+                        user : "pavi",
                         resume : a
                     },
-                    success :function(data){
-                        console.log(data)
-
+                  
+                    success : function(datas){
+                      let resumee = JSON.parse(datas).data
+                      console.log(resumee)
+                      $(".empty").html(``)
+                      for(let i=0;i<resumee.length;i++){
+                      let res_det=JSON.parse(resumee[i].data)
+                      console.log(res_det)
+                      let details="<tr><td>"+i+"</td><td>"+resumee[i].id+"</td><td>"+res_det.name+"</td><td>"+res_det.email+"</td><td><button>delete</button></td></tr>"
+                      $(".resumes").append(details)
                     }
+
+                  }
                 })
+
+              })
+            
                 $.ajax({
                     type : "get",
                     url:" http://karka.academy/api/action.php",
                     data:{
                         request : "get_user_resume",
-                        user : "pavithra"
+                        user : "pavi"
                     },
-        
-                })
+                    success : function(datas){
+                      let resumee = JSON.parse(datas).data
+                      console.log(resumee)
+                      for(let i=0;i<resumee.length;i++){
+                      let res_det=JSON.parse(resumee[i].data)
+                      console.log(res_det)
+                      let details="<tr><td>"+i+"</td><td>"+resumee[i].id+"</td><td>"+res_det.name+"</td><td>"+res_det.email+"</td><td><button class='delete' value="+resumee[i].id+">delete</button></td></tr>"
+                      $(".resumes").append(details)
+                    }
 
+                     }
+                  })
+                   
+              
+
+                $(document).on('click','.delete',function(){
+                    let id_val=$(this).val()
+                    $.ajax({
+                  type : "get",
+                  url : " http://karka.academy/api/action.php",
+                  data : {
+                    request : "delete_user_resume",
+                    user : "pavi",
+                    id : id_val
+                  },
+                  success : function(datas){
+                      let resumee = JSON.parse(datas).data
+                      
+                      for(let i=0;i<resumee.length;i++){
+                      let res_det=JSON.parse(resumee[i].data)
+                      console.log(res_det)
+                      let details="<tr><td>"+i+"</td><td>"+resumee[i].id+"</td><td>"+res_det.name+"</td><td>"+res_det.email+"</td><td><button class='delete' value="+resumee[i].id+">delete</button></td></tr>"
+                      $(".resumes").append(details)
+                }
+
+                }
+              });
             })
-        })
-
-                    
-  </script>
+              
+              
+                $.ajax({
+                 type : "get",
+                 url : "http:karka.academy/api/action.php",
+                 data : {
+                   request : "get_resume_by_id",
+                   user : "pavi",
+                   id : "1040"
+                 },
+                 success : function(data){
+                   console.log(data)
+                    var obj = JSON.parse(data)
+                    // console.log(obj)
+                    // console.log(obj.data.id);
+                    // console.log(obj.data.data);
+                    // var edu = obj.data[0].education
+                    // console.log(edu)
+                 },
+              
+                })
+              
+              })
+             </script>
   </body>
 </html>
