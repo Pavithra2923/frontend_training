@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // function f() {
+    //     var x = 1
+    //     let y = 2
+    //     const z = 3
+    //     {
+    //         var x = 100
+    //         let y = 200
+    //         const z = 300
+    //         console.log('x in block scope is', x)
+    //         console.log('y in block scope is', y)
+    //         console.log('z in block scope is', z)
+    //     }
+    //     console.log('x outside of block scope is', x)
+    //     console.log('y outside of block scope is', y)
+    //     console.log('z outside of block scope is', z)
+    //     }
+
+    //     f()
+
+    // var example
+    // var greeter = "hey hi";
+    // var a = 4;
+    //  if (a > 7) {
+    //     var greeter = "say Hello instead"; 
+    // }
+    // console.log(greeter)
+
+// let example
+    // let greeter = "hey hi";
+    // let a = 4;
+    //  if (a > 3) {
+    //     let greeter = "say Hello instead"; 
+    // }
+    // console.log(greeter)
+
+
+ // const example
+ function _const_example() {
+    const buddha = "nirvana";
+    
+    {
+        const buddha = "meditation";
+        console.log('buddha in block scope is', buddha)
+    }
+    
+    console.log('buddha outside of block scope is', buddha);
+    };
+
+    const buddha = "happiness";
+    _const_example();
+    console.log('buddha outside of a function scope is', buddha);
+
+
+    </script>
+</body>
+</html>
