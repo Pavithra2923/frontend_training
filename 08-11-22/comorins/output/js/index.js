@@ -99,25 +99,54 @@ var company =[
     //     document.getElementById('click').value = i;
     // }
 
+// part 2 1
+// let sum=(num1,num2=num1+1)=> console.log(num1+num2);
 
+//     sum(2,1);
+//     sum(2);
 
-//     class Foo {
-//         constructor(x) {
-//                 this.x = x;
+//part 2 2
+// class data{
+//         constructor(name){
+//         this.name=name
 //         }
-//         hello() {
-//                 return `hello ${this.x}`;
+//         static get(){
+//             console.log(this.name)
 //         }
-// }
+//     }
+//     data.get("This is print without new keyword");
+
+// part 2 3
+// let person1 = {
+//         name: "pavi",
+//         phone:123
+//     }
+//     let person2 = {
+        
+//         age : 456,
+//         phone :2356
+//     }
+//     function compare(person1, person2) {
+//         for (let i in person2) {
+//             if (person1[i] == person2[i]) {
+//                 console.log(person1[i])
+//                 return true
+//             }
+//             return false
+//         }
+//     }
+//     console.log(compare(person1,person2))
+
+// part 2 4
 
 // part 2 5
 
-        // function checkVariable(variable) {
-        //         return (variable==null)?"this is null":"not null"
-        //        }
-        //        console.log(checkVariable(5));
-        //        console.log(checkVariable());
-
+        //  function checkVariable(variable) {
+        //          return (variable==null) || (variable==undefined)?"this is null or undef":"not null or not undef"
+        //         }
+        //         console.log(checkVariable(5),);
+        //         console.log(checkVariable(12));
+        
 // part3 1
 
         // var user = {
@@ -187,6 +216,10 @@ var company =[
         // var arr = [1,25,33,4,9,10,23,11];
         // var search = arr.find(a => a > 10);
         // console.log(search);
+        // var filter=arr.filter(a=>a>20);
+        // console.log(filter)
+        // var findindex=arr.indexOf(23)
+        // console.log(findindex)
 
 // part 4 1
         // function rremoveItem(arr) {
@@ -194,6 +227,33 @@ var company =[
         //     }
         //     console.log(rremoveItem([1,2,3,4,1,3,4,7,5]));
 
-// part 4 2
+// part 4 4
+// let a=[11,-5,8,5,-01,-0.3,3]
+//         let filter=a.filter(ele=>ele<0)
+//         console.log("negative val",filter)
         
 
+// part 5 1
+
+// let arr1=[12,56,66,100,01]
+// let arr2=[12,22,99];
+// let arr3=[...arr1,...arr2];
+// console.log(arr3)
+// console.log("max val of an array",Math.max(...arr3))
+// console.log("min val of an array",Math.min(...arr3))
+
+// part 5 2
+
+let fishermen=[
+        {name:"george",score:200},
+        {name:"mani",score:120},
+        {name:"ravi",score:150},
+        {name:"nathan",score:99}
+         ];
+let sum=0
+let fishmen=fishermen.map(a=>a)
+fishmen.forEach(a=>sum+=a.score)
+console.log("total score",sum)
+console.log("average",sum/fishermen.length)
+let max_score=fishermen.filter(a=> a.score>100)
+max_score.forEach(a=> console.log("get score above 100",a.name))
